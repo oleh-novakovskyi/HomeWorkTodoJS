@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ToDo List</title>
+    <link rel=stylesheet type="text/css" href="style.css">  
+    
+</head>
+<body>
+    <div class="form">
+    <form action="" id="myform">
+        <div class="userList">User:        
+        <select id="userId" name="userId" required>
+            <option value="">---</option>
+            <option value="1">User #1</option>
+            <option value="2">User #2</option>
+            <option value="3">User #3</option>
+            <option value="4">User #4</option>            
+        </select>
+        </div>       
+        <div class="desc">      
+            <textarea id="title" placeholder="Write your text here..." name="title" rows="5" cols="33"></textarea>
+        </div>        
+        <div class="btn"> 
+            <input name="rendomId" id="rendomId" type="number" hidden>
+            <input type="text" id="completed" value="false" name="completed" hidden> 
+            <input type="submit" onclick="addToDoList()" value="Submit" /> 
+        </div>
+        </form>
+        </div>
+        <div id="todoList"></div>
+    <script src="main.js"></script>
+</body>
+</html>

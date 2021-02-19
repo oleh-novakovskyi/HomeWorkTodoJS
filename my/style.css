@@ -1,0 +1,77 @@
+  input, select, textarea{
+    margin:3px;
+    border:1px solid #ccc;
+    padding:3px;
+    border-radius:3px;
+  }
+
+.form {
+  border: 1px solid #706f6f;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.btn, .userList, .desc {
+  padding:5px;
+}
+
+input[type=submit] {
+  padding:5px 10px;
+  background-color: #4CAF50;
+  border: 1px solid green;
+  color:#fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {  
+  background-color: green;
+  border: 1px solid #4CAF50;  
+}
+
+  /* --------- TODO --------- */
+  .todo {
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #706f6f;
+  }
+  
+  .todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .todo .state-icon,
+  .todo .delete-icon {
+    position: relative;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+  }
+  
+  .todo .state-icon {
+    border: 1px dashed #706f6f;
+  }
+  
+  .todo .delete-icon {
+    background: url(https://image.flaticon.com/icons/png/512/61/61848.png) center /
+      contain no-repeat;
+    transition: transform .3s;
+  }
+  .todo .delete-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .todo.completed .state-icon:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0.75em;
+    height: 1em;
+    border: 0 solid rgb(86, 189, 86);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg) translate(0.2em, -0.2em);
+  }
